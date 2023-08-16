@@ -17,7 +17,7 @@ edate = date(2010,6,30)
 
 # Set hours for each date to extract
 hours = ['00', '03', '06', '09', '12', '15', '18', '21']
-area_limits = ['30', '260', '-55', '345']
+area_limits = ['30', '260', '-55', '345'] #lat_max lon_min lat_min lon_max
 
 while (idate <= edate):
 

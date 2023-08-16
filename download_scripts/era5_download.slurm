@@ -4,14 +4,11 @@
 #SBATCH --time=12:0:0
 #SBATCH --ntasks=1
 
-#SBATCH --account=n02-weat
+#SBATCH --account=n02-MRW011379
 #SBATCH --partition=serial
 #SBATCH --qos=serial
 
-. ~/bin/conda_init.sh
-
-conda activate cdsapi
-
+source /work/n02/n02/franmorr/venvs/cdsapi/bin/activate
 
 python download.py
 
