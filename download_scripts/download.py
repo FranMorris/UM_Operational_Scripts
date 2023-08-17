@@ -12,12 +12,12 @@ c = cdsapi.Client()
  
 
 # Set dates for data extraction
-idate = date(2010,6,1)
-edate = date(2010,6,30)
+idate = date(2013,9,1)
+edate = date(2013,9,20)
 
 # Set hours for each date to extract
 hours = ['00', '03', '06', '09', '12', '15', '18', '21']
-area_limits = ['30', '260', '-55', '345'] #lat_max lon_min lat_min lon_max
+area_limits = ['10', '0', '-50', '60'] #lat_max lon_min lat_min lon_max
 
 while (idate <= edate):
 
@@ -29,7 +29,7 @@ while (idate <= edate):
     strmonth = "%02d" % (imonth)
     strday   = "%02d" % (iday)
     strdate = "%d%02d%02d" % (iyear, imonth, iday)
-    print(strdate)   
+    print(strdate)
 
     for hour in hours:
         # extract 3D data
