@@ -12,12 +12,12 @@ c = cdsapi.Client()
  
 
 # Set dates for data extraction
-idate = date(2013,9,1)
-edate = date(2013,9,20)
+idate = date(2022,10,10)
+edate = date(2022,10,31)
 
 # Set hours for each date to extract
 hours = ['00', '03', '06', '09', '12', '15', '18', '21']
-area_limits = ['10', '0', '-50', '60'] #lat_max lon_min lat_min lon_max
+area_limits = ['30', '-5', '-50', '65'] #lat_max lon_min lat_min lon_max
 
 while (idate <= edate):
 
