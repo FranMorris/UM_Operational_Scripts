@@ -79,7 +79,7 @@ while (idate <= edate):
                     'surface_pressure', 'soil_temperature_level_1', 'soil_temperature_level_2', 'soil_temperature_level_3',
                     'soil_temperature_level_4', 'soil_type', 'volumetric_soil_water_layer_1',
                     'volumetric_soil_water_layer_2', 'volumetric_soil_water_layer_3', 'volumetric_soil_water_layer_4',
-                    'snow_density', 'snow_depth'
+                    'snow_density', 'snow_depth', 'sea_surface_temperature'
                 ],
                 'time': [f'{hour}:00'],
                 'area': area_limits,
