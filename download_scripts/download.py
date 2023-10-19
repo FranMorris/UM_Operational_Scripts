@@ -43,7 +43,8 @@ while (idate <= edate):
                 'day': strday,
                 'variable': [
                     'specific_humidity', 'temperature', 'u_component_of_wind',
-                    'v_component_of_wind'
+                    'v_component_of_wind', 'specific_cloud_ice_water_content',
+                    'specific_cloud_liquid_water_content'
                 ],
                 'pressure_level': [
                     '1', '2', '3',
@@ -79,7 +80,7 @@ while (idate <= edate):
                     'surface_pressure', 'soil_temperature_level_1', 'soil_temperature_level_2', 'soil_temperature_level_3',
                     'soil_temperature_level_4', 'soil_type', 'volumetric_soil_water_layer_1',
                     'volumetric_soil_water_layer_2', 'volumetric_soil_water_layer_3', 'volumetric_soil_water_layer_4',
-                    'snow_density', 'snow_depth', 'sea_surface_temperature'
+                    'snow_density', 'snow_depth', 'sea_surface_temperature', 'sea_ice_cover'
                 ],
                 'time': [f'{hour}:00'],
                 'area': area_limits,
