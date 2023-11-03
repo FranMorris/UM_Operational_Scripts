@@ -8,7 +8,7 @@ import os
 
 import cdsapi
 
-c = cdsapi.Client(verify=False)
+c = cdsapi.Client()
  
 
 # Set dates for data extraction
