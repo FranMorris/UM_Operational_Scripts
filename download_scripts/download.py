@@ -8,7 +8,7 @@ import os
 
 import cdsapi
 
-c = cdsapi.Client()
+c = cdsapi.Client(verify=False)
  
 
 # Set dates for data extraction
@@ -43,8 +43,7 @@ while (idate <= edate):
                 'day': strday,
                 'variable': [
                     'specific_humidity', 'temperature', 'u_component_of_wind',
-                    'v_component_of_wind', 'specific_cloud_ice_water_content',
-                    'specific_cloud_liquid_water_content'
+                    'v_component_of_wind'
                 ],
                 'pressure_level': [
                     '1', '2', '3',
@@ -80,7 +79,7 @@ while (idate <= edate):
                     'surface_pressure', 'soil_temperature_level_1', 'soil_temperature_level_2', 'soil_temperature_level_3',
                     'soil_temperature_level_4', 'soil_type', 'volumetric_soil_water_layer_1',
                     'volumetric_soil_water_layer_2', 'volumetric_soil_water_layer_3', 'volumetric_soil_water_layer_4',
-                    'snow_density', 'snow_depth', 'sea_surface_temperature', 'sea_ice_cover'
+                    'snow_density', 'snow_depth'
                 ],
                 'time': [f'{hour}:00'],
                 'area': area_limits,
