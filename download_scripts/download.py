@@ -9,11 +9,10 @@ import os
 import cdsapi
 
 c = cdsapi.Client(verify=False)
- 
 
 # Set dates for data extraction
-idate = date(2022,10,10)
-edate = date(2022,10,31)
+idate = date(2022,9,24)
+edate = date(2022,9,30)
 
 # Set hours for each date to extract
 hours = ['00', '03', '06', '09', '12', '15', '18', '21']

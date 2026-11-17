@@ -10,5 +10,5 @@
 
 source /work/n02/n02/franmorr/venvs/cdsapi/bin/activate
 
-python download.py
+python new_api_download.py
 
